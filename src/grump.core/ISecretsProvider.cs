@@ -11,7 +11,5 @@ namespace Grump.Core
 
         Task<string> GetSecretAsync(string secretName);
 
-        string GetSecret(string secretName);
-
     }
 }
