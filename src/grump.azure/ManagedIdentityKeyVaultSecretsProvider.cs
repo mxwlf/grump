@@ -1,19 +1,22 @@
-﻿using System.Threading.Tasks;
-using Grump.Core;
-using Microsoft.Azure.KeyVault;
-using Microsoft.Azure.Services.AppAuthentication;
+﻿using System;
+using System.Threading.Tasks;
+using Grump.Abstractions;
+using Microsoft.Extensions.Configuration;
 
 namespace Grump.Azure
 {
     public class ManagedIdentityKeyVaultSecretsProvider : ISecretsProvider
     {
+        private readonly IConfigurationProvider _configurationProvider;
+
+        public ManagedIdentityKeyVaultSecretsProvider(IConfigurationProvider configurationProvider)
+        {
+            _configurationProvider = configurationProvider ?? throw new ArgumentNullException("configurationProvider");
+        }
         public async Task<string> GetSecretAsync(string secretName)
         {
-            AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
-            KeyVaultClient keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
-            var secret = await keyVaultClient.GetSecretAsync("").ConfigureAwait(false);
-
-            return secret.Value;
+            throw new System.NotImplementedException();
         }
+        
     }
 }

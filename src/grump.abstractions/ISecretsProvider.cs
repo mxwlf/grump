@@ -1,7 +1,6 @@
-﻿
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Grump.Core
+namespace Grump.Abstractions
 {
     /// <summary>
     /// Provides an interface to get secrets from a secure store.

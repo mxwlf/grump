@@ -1,7 +1,6 @@
-﻿using Grump.Core;
-using Newtonsoft.Json;
+﻿
+using Grump.Abstractions;
 using System;
-using System.IO;
 using System.Threading.Tasks;
 
 namespace grump.testhelpers
@@ -14,11 +13,6 @@ namespace grump.testhelpers
     /// </remarks>
     public class UserFileTestSecretsProvider : ISecretsProvider
     {
-        public string GetSecret(string secretName)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<string> GetSecretAsync(string secretName)
         {
             throw new NotImplementedException();
