@@ -5,4 +5,12 @@
     <RootNamespace>Grump.Core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="7.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\grump.abstractions\grump.abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
