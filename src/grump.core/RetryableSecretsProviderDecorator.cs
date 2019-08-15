@@ -5,40 +5,28 @@ using Polly;
 
 namespace Grump.Core
 {
-    public class RetryableSecretsProviderDecorator : ISecretsProvider
+    public class RetryableSecretsProviderDecorator : PollyRetryableDecoratorBase<ISecretsProvider, Task<string>>, ISecretsProvider
     {
-        private readonly ISecretsProvider _secretsProvider;
+        public string SecretName { get; set; }
 
-        public RetryableSecretsProviderDecorator(ISecretsProvider secretsProvider)
+        public RetryableSecretsProviderDecorator(ISecretsProvider secretsProvider) : base(secretsProvider)
         {
-            _secretsProvider = secretsProvider ?? throw new ArgumentNullException();
         }
+
+        protected override ISyncPolicy DefaultPolicy => Polly.Policy.Handle<Exception>().WaitAndRetry(5, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+        ; 
 
         public async Task<string> GetSecretAsync(string secretName)
         {
-            //TODO: Need to implement policies from the caller so we do more targetted exception handling for transient exceptions.
-            Policy
-                .Handle<Exception>()
-                 .WaitAndRetry(5, retryAttempt =>
-                    TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+            SecretName = secretName;
 
+            return await RetryableAction();
 
-            var policyResult = await Policy
-              .Handle<Exception>()
-              .RetryAsync()
-              .ExecuteAndCaptureAsync(() => GetSecretAsyncCoreCall(secretName));
-
-            if (policyResult.Outcome == OutcomeType.Failure)
-            {
-                throw new Exception("An exception occured after trying multiple times to acess the secrets provider.", policyResult.FinalException);
-            }
-
-            return policyResult.Result;
         }
 
-        private async Task<string> GetSecretAsyncCoreCall(string secretName)
+        protected override async Task<string> RetryableAction()
         {
-            return await _secretsProvider.GetSecretAsync(secretName);
+            return await DecoratedInstace.GetSecretAsync(SecretName);
         }
     }
 }
