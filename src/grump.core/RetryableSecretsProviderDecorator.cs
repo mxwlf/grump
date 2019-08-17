@@ -14,7 +14,7 @@ namespace Grump.Core
         }
 
         protected override ISyncPolicy DefaultPolicy => Polly.Policy.Handle<Exception>().WaitAndRetry(5, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
-        ; 
+        
 
         public async Task<string> GetSecretAsync(string secretName)
         {
