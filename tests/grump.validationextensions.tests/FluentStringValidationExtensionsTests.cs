@@ -11,14 +11,11 @@ namespace Grump.ValidationExtensions.Tests
         [TestMethod]
         public void NonEmpty()
         {
-            var fixture = new Fixture();
             string @string = null;
 
-            Action comparison = () => { @string.ShouldNotBe().NonEmptyValue();  };
+            Action validation = () => { @string.ShouldBe().NonEmptyOrWhitespace();  };
 
-            comparison.Should().Throw<ArgumentNullException>();
-
-
+            validation.Should().Throw<ArgumentNullException>();
         }
     }
 }

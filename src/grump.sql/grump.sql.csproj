@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Configurations>Debug;Release;Production</Configurations>
+    <RootNamespace>Grump.Sql</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="1.0.19221.1-Preview" />
   </ItemGroup>
 
   <ItemGroup>

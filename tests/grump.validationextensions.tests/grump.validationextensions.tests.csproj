@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\grump.validationextensions\grump.validationextensions.csproj" />
+    <ProjectReference Include="..\..\src\grump.validationextensions\grump.validationextensions.csproj" />
   </ItemGroup>
 
 </Project>

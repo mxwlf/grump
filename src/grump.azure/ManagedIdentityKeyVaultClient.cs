@@ -327,7 +327,7 @@ namespace Grump.Azure
 
         public Task<AzureOperationResponse<SecretBundle>> GetSecretWithHttpMessagesAsync(string vaultBaseUrl, string secretName, string secretVersion, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
-            throw new System.NotImplementedException();
+            return this.KeyVaultClient.GetSecretWithHttpMessagesAsync(vaultBaseUrl, secretName, secretVersion, customHeaders, cancellationToken);
         }
 
         public Task<AzureOperationResponse<IPage<StorageAccountItem>>> GetStorageAccountsNextWithHttpMessagesAsync(string nextPageLink, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
