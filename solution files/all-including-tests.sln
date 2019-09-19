@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F7D79DB2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.validationextensions.tests", "..\tests\grump.validationextensions.tests\grump.validationextensions.tests.csproj", "{BE12562C-53F3-4990-ABA6-B17DD539CBD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.aspnet", "grump.aspnet\grump.aspnet.csproj", "{468B0CEE-06F8-4C4E-B920-A07BF135C6E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{BE12562C-53F3-4990-ABA6-B17DD539CBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE12562C-53F3-4990-ABA6-B17DD539CBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE12562C-53F3-4990-ABA6-B17DD539CBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468B0CEE-06F8-4C4E-B920-A07BF135C6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468B0CEE-06F8-4C4E-B920-A07BF135C6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468B0CEE-06F8-4C4E-B920-A07BF135C6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468B0CEE-06F8-4C4E-B920-A07BF135C6E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
