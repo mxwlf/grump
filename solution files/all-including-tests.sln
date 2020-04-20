@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.io", "..\src\grump.io
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.io.test.unit", "grump.io.test.unit\grump.io.test.unit.csproj", "{8E863530-B26B-434D-AA40-7DFED6B3EC53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.test.unit", "..\tests\unit\grump.test.unit\grump.test.unit.csproj", "{36E5058B-7290-44B8-A64B-CAF344B57043}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E5058B-7290-44B8-A64B-CAF344B57043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E5058B-7290-44B8-A64B-CAF344B57043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E5058B-7290-44B8-A64B-CAF344B57043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E5058B-7290-44B8-A64B-CAF344B57043}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +117,7 @@ Global
 		{20930002-731D-45CF-814F-CC3F022DB369} = {6C2240F9-B0B2-47B8-A74C-AAD82C15F165}
 		{F735058F-18AF-48F5-B874-BD704014AD8C} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{8E863530-B26B-434D-AA40-7DFED6B3EC53} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
+		{36E5058B-7290-44B8-A64B-CAF344B57043} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3BB6A03-1637-4FC2-A1FA-B96A4A0665B6}
