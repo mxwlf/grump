@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\grump.abstractions\grump.abstractions.csproj" />
-    <ProjectReference Include="..\grump.core\grump.core.csproj" />
+    <ProjectReference Include="..\grump\grump.csproj" />
   </ItemGroup>
 
 </Project>

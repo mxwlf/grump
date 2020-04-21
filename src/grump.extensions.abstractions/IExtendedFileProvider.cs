@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.FileProviders;
 
-namespace Grump.FileProviders
+namespace Grump.Extensions.FileProviders
 {
     public interface IExtendedFileProvider : IFileProvider
     {

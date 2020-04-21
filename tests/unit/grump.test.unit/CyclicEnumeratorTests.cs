@@ -6,7 +6,7 @@ using Grump;
 using Grump.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace grump.test.unit
+namespace Grump.Test.Unit
 {
     [TestClass]
     public class CyclicEnumeratorTests

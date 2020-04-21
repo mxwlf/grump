@@ -1,5 +1,4 @@
-using System.IO;
-using grump.testhelpers;
+using Grump.TestHelpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Grump.FileProviders.Test.Integration

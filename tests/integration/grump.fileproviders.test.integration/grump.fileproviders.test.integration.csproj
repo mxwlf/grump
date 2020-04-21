@@ -17,9 +17,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\src\grump.fileproviders.abstractions\grump.fileproviders.abstractions.csproj" />
-      <ProjectReference Include="..\..\..\src\grump.fileproviders\grump.fileproviders.csproj" />
-      <ProjectReference Include="..\..\..\src\grump.testhelpers\grump.testhelpers.csproj" />
+      <ProjectReference Include="..\..\..\src\grump.extensions.abstractions\grump.extensions.abstractions.csproj" />
+      <ProjectReference Include="..\..\..\src\grump.extensions\grump.extensions.csproj" />
+      <ProjectReference Include="..\..\shared\grump.testhelpers\grump.testhelpers.csproj" />
     </ItemGroup>
 
 </Project>

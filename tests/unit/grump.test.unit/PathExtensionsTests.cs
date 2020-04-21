@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using AutoFixture;
 using FluentAssertions;
-using grump.testhelpers;
+using Grump.TestHelpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Grump.IO.Test.Unit

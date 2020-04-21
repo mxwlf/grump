@@ -18,8 +18,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\grump.io\grump.io.csproj" />
-      <ProjectReference Include="..\..\src\grump.testhelpers\grump.testhelpers.csproj" />
+      <ProjectReference Include="..\..\..\src\grump.io\grump.io.csproj" />
+      <ProjectReference Include="..\..\..\src\grump.testhelpers\grump.testhelpers.csproj" />
+      <ProjectReference Include="..\..\..\src\grump\grump.csproj" />
     </ItemGroup>
 
 </Project>

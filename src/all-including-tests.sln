@@ -3,39 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.abstractions", "..\src\grump.abstractions\grump.abstractions.csproj", "{E73CF818-26B7-47F2-8B40-1C20DD17829C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.azure", "..\src\grump.azure\grump.azure.csproj", "{ED9D1B1F-960C-4769-9CEB-E99D0BB14DF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.core", "..\src\grump.core\grump.core.csproj", "{24026C2F-0084-4F67-9996-0AC0DE8326F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump", "grump\grump.csproj", "{24026C2F-0084-4F67-9996-0AC0DE8326F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.datastructures", "..\src\grump.datastructures\grump.datastructures.csproj", "{FC812FA1-1A8C-461F-972D-3AD829D3C51A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.semantics", "..\src\grump.semantics\grump.semantics.csproj", "{EEBD491A-297B-47B1-8086-1494FA086F37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.testhelpers", "..\src\grump.testhelpers\grump.testhelpers.csproj", "{B791B192-831E-4B8F-BA14-1E520E054839}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grump.validationextensions", "..\src\grump.validationextensions\grump.validationextensions.csproj", "{A6BF8B86-5EF1-4325-8CC1-26FFECB6ED97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests-unit", "tests-unit", "{F7D79DB2-DDC7-415E-8475-302F13DB6B21}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{F7D79DB2-DDC7-415E-8475-302F13DB6B21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.fileproviders.abstractions", "..\src\grump.fileproviders.abstractions\grump.fileproviders.abstractions.csproj", "{C94C9320-532C-4C8B-98C4-BF40FD3EB78B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.extensions.abstractions", "grump.extensions.abstractions\grump.extensions.abstractions.csproj", "{C94C9320-532C-4C8B-98C4-BF40FD3EB78B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.fileproviders", "..\src\grump.fileproviders\grump.fileproviders.csproj", "{4438B13C-5949-4238-BA08-AC28E733187F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.extensions", "grump.extensions\grump.extensions.csproj", "{4438B13C-5949-4238-BA08-AC28E733187F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test-integration", "test-integration", "{6C2240F9-B0B2-47B8-A74C-AAD82C15F165}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{6C2240F9-B0B2-47B8-A74C-AAD82C15F165}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.validationextensions.tests", "..\tests\unit\grump.validationextensions.tests\grump.validationextensions.tests.csproj", "{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.fileproviders.test.integration", "..\tests\integration\grump.fileproviders.test.integration\grump.fileproviders.test.integration.csproj", "{20930002-731D-45CF-814F-CC3F022DB369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.io", "..\src\grump.io\grump.io.csproj", "{F735058F-18AF-48F5-B874-BD704014AD8C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.io.test.unit", "grump.io.test.unit\grump.io.test.unit.csproj", "{8E863530-B26B-434D-AA40-7DFED6B3EC53}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.test.unit", "..\tests\unit\grump.test.unit\grump.test.unit.csproj", "{36E5058B-7290-44B8-A64B-CAF344B57043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E211CB6F-810D-47B8-8466-9E964644162A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{9C3C58C7-73D6-44E1-BF48-BF8A6FD36AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.testhelpers", "..\tests\shared\grump.testhelpers\grump.testhelpers.csproj", "{B20AECC1-E49C-4D34-87C9-58BF097DFA63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E73CF818-26B7-47F2-8B40-1C20DD17829C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E73CF818-26B7-47F2-8B40-1C20DD17829C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E73CF818-26B7-47F2-8B40-1C20DD17829C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E73CF818-26B7-47F2-8B40-1C20DD17829C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED9D1B1F-960C-4769-9CEB-E99D0BB14DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED9D1B1F-960C-4769-9CEB-E99D0BB14DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED9D1B1F-960C-4769-9CEB-E99D0BB14DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,10 +57,6 @@ Global
 		{EEBD491A-297B-47B1-8086-1494FA086F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEBD491A-297B-47B1-8086-1494FA086F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEBD491A-297B-47B1-8086-1494FA086F37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B791B192-831E-4B8F-BA14-1E520E054839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B791B192-831E-4B8F-BA14-1E520E054839}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B791B192-831E-4B8F-BA14-1E520E054839}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B791B192-831E-4B8F-BA14-1E520E054839}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6BF8B86-5EF1-4325-8CC1-26FFECB6ED97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6BF8B86-5EF1-4325-8CC1-26FFECB6ED97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BF8B86-5EF1-4325-8CC1-26FFECB6ED97}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,37 +77,33 @@ Global
 		{20930002-731D-45CF-814F-CC3F022DB369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20930002-731D-45CF-814F-CC3F022DB369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20930002-731D-45CF-814F-CC3F022DB369}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F735058F-18AF-48F5-B874-BD704014AD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F735058F-18AF-48F5-B874-BD704014AD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F735058F-18AF-48F5-B874-BD704014AD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F735058F-18AF-48F5-B874-BD704014AD8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E863530-B26B-434D-AA40-7DFED6B3EC53}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36E5058B-7290-44B8-A64B-CAF344B57043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36E5058B-7290-44B8-A64B-CAF344B57043}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E5058B-7290-44B8-A64B-CAF344B57043}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36E5058B-7290-44B8-A64B-CAF344B57043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20AECC1-E49C-4D34-87C9-58BF097DFA63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20AECC1-E49C-4D34-87C9-58BF097DFA63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20AECC1-E49C-4D34-87C9-58BF097DFA63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20AECC1-E49C-4D34-87C9-58BF097DFA63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E73CF818-26B7-47F2-8B40-1C20DD17829C} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{ED9D1B1F-960C-4769-9CEB-E99D0BB14DF7} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{24026C2F-0084-4F67-9996-0AC0DE8326F3} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{FC812FA1-1A8C-461F-972D-3AD829D3C51A} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{EEBD491A-297B-47B1-8086-1494FA086F37} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
-		{B791B192-831E-4B8F-BA14-1E520E054839} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{A6BF8B86-5EF1-4325-8CC1-26FFECB6ED97} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{C94C9320-532C-4C8B-98C4-BF40FD3EB78B} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
 		{4438B13C-5949-4238-BA08-AC28E733187F} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{20930002-731D-45CF-814F-CC3F022DB369} = {6C2240F9-B0B2-47B8-A74C-AAD82C15F165}
-		{F735058F-18AF-48F5-B874-BD704014AD8C} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
-		{8E863530-B26B-434D-AA40-7DFED6B3EC53} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
 		{36E5058B-7290-44B8-A64B-CAF344B57043} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
+		{6C2240F9-B0B2-47B8-A74C-AAD82C15F165} = {E211CB6F-810D-47B8-8466-9E964644162A}
+		{F7D79DB2-DDC7-415E-8475-302F13DB6B21} = {E211CB6F-810D-47B8-8466-9E964644162A}
+		{9C3C58C7-73D6-44E1-BF48-BF8A6FD36AC0} = {E211CB6F-810D-47B8-8466-9E964644162A}
+		{B20AECC1-E49C-4D34-87C9-58BF097DFA63} = {9C3C58C7-73D6-44E1-BF48-BF8A6FD36AC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3BB6A03-1637-4FC2-A1FA-B96A4A0665B6}

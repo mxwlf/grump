@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Grump.FileProviders;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.FileProviders.Physical;
 
-namespace Grump.FileProviders
+namespace Grump.Extensions.FileProviders
 {
     public class ExtendedPhysicalFileProvider : PhysicalFileProvider , IExtendedFileProvider
     {
