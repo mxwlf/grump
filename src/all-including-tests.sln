@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{F7D79DB2-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{6C2240F9-B0B2-47B8-A74C-AAD82C15F165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.validationextensions.tests", "..\tests\unit\grump.validationextensions.tests\grump.validationextensions.tests.csproj", "{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.fileproviders.test.integration", "..\tests\integration\grump.fileproviders.test.integration\grump.fileproviders.test.integration.csproj", "{20930002-731D-45CF-814F-CC3F022DB369}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grump.test.unit", "..\tests\unit\grump.test.unit\grump.test.unit.csproj", "{36E5058B-7290-44B8-A64B-CAF344B57043}"
@@ -39,10 +37,6 @@ Global
 		{FC812FA1-1A8C-461F-972D-3AD829D3C51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC812FA1-1A8C-461F-972D-3AD829D3C51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC812FA1-1A8C-461F-972D-3AD829D3C51A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20930002-731D-45CF-814F-CC3F022DB369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20930002-731D-45CF-814F-CC3F022DB369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20930002-731D-45CF-814F-CC3F022DB369}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -62,7 +56,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{24026C2F-0084-4F67-9996-0AC0DE8326F3} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
 		{FC812FA1-1A8C-461F-972D-3AD829D3C51A} = {8BA9C46B-DC6A-4A4E-931F-78B3C0B4FFBD}
-		{0F7936BF-C6DC-4668-AB4D-0E920A0EF51D} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
 		{20930002-731D-45CF-814F-CC3F022DB369} = {6C2240F9-B0B2-47B8-A74C-AAD82C15F165}
 		{36E5058B-7290-44B8-A64B-CAF344B57043} = {F7D79DB2-DDC7-415E-8475-302F13DB6B21}
 		{6C2240F9-B0B2-47B8-A74C-AAD82C15F165} = {E211CB6F-810D-47B8-8466-9E964644162A}
