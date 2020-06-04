@@ -1,8 +1,8 @@
 ﻿using System.IO;
 
-namespace Grump.TestHelpers
+namespace grump.tests.integration
 {
-    public static class FileSystemSampleDataHelpers
+    public class Helpers
     {
         public static void PrepareExampleAbcDirectoryHierarchy(string rootFolder)
         {
