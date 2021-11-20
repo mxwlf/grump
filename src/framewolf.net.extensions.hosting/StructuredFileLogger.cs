@@ -8,15 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Formatting = System.Xml.Formatting;
 
-namespace grump.hosting
+namespace framewolf.net.Extensions.Hosting
 {
     public class StructuredFileLogger : ILogger, IDisposable, IAsyncDisposable
     {
-        private static readonly EventId FlushingEvent = new(15, "StructuredFileLogger shutting down.");
+        private static readonly EventId FlushingEvent = new EventId(15, "StructuredFileLogger shutting down.");
 
-        private static readonly ConcurrentBag<StructuredLogEntry> Entries = new();
+        private static readonly ConcurrentBag<StructuredLogEntry> Entries = new ConcurrentBag<StructuredLogEntry>();
         private readonly StructuredFileLoggerOptions _options;
         
         private static bool IsBeingDisposed

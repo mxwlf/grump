@@ -1,14 +1,25 @@
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-namespace Framewolf.Extensions.Hosting
+namespace framewolf.net.Extensions.Hosting
 {
-    public class WolfHost
+    public class WolfHost 
     {
         private readonly IHost _genericHost;
 
-        public WolfHost(IHost genericHost)
+        public static IHostBuilder CreateDefaultHostBuilder(string[] args)
         {
-            _genericHost = genericHost;
+            
+            return Host.CreateDefaultBuilder(args)
+            .ConfigureLogging(config =>
+            {
+                config.AddSeq();
+                config.AddConsole(consoleLoggerOptions =>
+                {
+                    consoleLoggerOptions.LogToStandardErrorThreshold = LogLevel.Debug;
+                });
+            });
+
         }
     }
 }

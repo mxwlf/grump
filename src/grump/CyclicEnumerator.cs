@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using mxwlf.net.Validation;
 
 namespace Grump
 {
@@ -12,7 +13,7 @@ namespace Grump
 
         public CyclicEnumerator(T[] elements)
         {
-            elements.MustNotBeNull();
+            elements.ThrowIfNull();
 
             _elements = elements;
             _length = _elements.Length;

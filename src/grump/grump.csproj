@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Grump</RootNamespace>
+    <RootNamespace>mxwlf.net.Grump</RootNamespace>
     <Configurations>Debug;Release;Production</Configurations>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1</TargetFrameworks>
+    <AssemblyName>mxwlf.net.grump</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,13 +12,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="5.0.0" />
     <PackageReference Include="Polly" Version="7.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\grump.abstractions\grump.abstractions.csproj" />
+    <ProjectReference Include="..\..\..\io.abstractions\src\io.abstractions\io.abstractions.csproj" />
+    <ProjectReference Include="..\..\..\validation\src\validation\validation.csproj" />
   </ItemGroup>
 
 </Project>

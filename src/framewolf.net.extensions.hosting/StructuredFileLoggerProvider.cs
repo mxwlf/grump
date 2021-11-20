@@ -2,7 +2,7 @@ using System.IO;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace grump.hosting
+namespace framewolf.net.Extensions.Hosting
 {
     public class StructuredFileLoggerProvider : ILoggerProvider
     {

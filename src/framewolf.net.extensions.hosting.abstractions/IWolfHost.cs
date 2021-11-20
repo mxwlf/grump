@@ -1,7 +1,7 @@
-namespace mxwlf.net.Grump.Abstractions
+namespace framewolf.net.Extensions.Hosting.Abstractions
 {
     public interface IWolfHost
     {
-        
+        T GetService<T>();
     }
 }

@@ -1,22 +1,11 @@
-using Microsoft.Extensions.Hosting;
-using mxwlf.net.Grump.Abstractions;
+// using System;
+// using framewolf.net.Extensions.Hosting.Abstractions;
+// using Microsoft.Extensions.Hosting;
 
-namespace Framewolf.Extensions.Hosting
+namespace framewolf.net.Extensions.Hosting
 {
-    public class WolfHostBuilder: IWolfHostBuilder
-    {
-        private readonly IHostBuilder _genericHostBuilder;
-        
-        public WolfHostBuilder(IHostBuilder genericHostBuilder)
-        {
-            _genericHostBuilder = genericHostBuilder;
-        }
-
-        public IHostBuilder GenericHostBuilder => _genericHostBuilder;
-        
-        public IWolfHost Build()
-        {
-            
-        }
-    }
+    // public class WolfHostBuilder: IWolfHostBuilder
+    // {
+    //     
+    // }
 }

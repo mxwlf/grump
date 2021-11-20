@@ -1,4 +1,4 @@
-namespace grump.hosting
+namespace framewolf.net.Extensions.Hosting
 {
     public class StructuredFileLoggerOptions
     {

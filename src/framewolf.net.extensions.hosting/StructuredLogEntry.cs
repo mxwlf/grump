@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace grump.hosting
+namespace framewolf.net.Extensions.Hosting
 {
     public class StructuredLogEntry
     {

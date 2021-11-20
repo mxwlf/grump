@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Framewolf.Extensions.Hosting</AssemblyName>
-    <RootNamespace>Framewolf.Extensions.Hosting</RootNamespace>
+    <RootNamespace>framewolf.net.Extensions.Hosting</RootNamespace>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\grump.abstractions\grump.abstractions.csproj" />
+    <ProjectReference Include="..\framewolf.net.extensions.hosting.abstractions\framewolf.net.extensions.hosting.abstractions.csproj" />
   </ItemGroup>
 
 </Project>

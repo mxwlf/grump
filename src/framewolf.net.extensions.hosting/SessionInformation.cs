@@ -1,6 +1,6 @@
 using System;
 
-namespace grump.hosting
+namespace framewolf.net.Extensions.Hosting
 {
     public class SessionInformation
     {
